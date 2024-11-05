@@ -1,0 +1,371 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+
+}
+/*header*/
+header {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color:rgb(17, 25, 42);
+    justify-content: center;
+}
+
+
+
+.navigation.bar {
+    margin: 5px;
+}
+
+.nav-elements {
+    padding: 15px;
+     list-style-type: none;
+     margin-left: 40px;
+     padding: 0%;
+     margin: 5px;
+     text-align: center;
+}
+
+.nav-elements li {
+    display: inline-flex;
+}
+
+.nav-elements ul {
+    display: flex;
+   
+}
+
+.nav-elements a {
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: calc(0.7em + 1vh);
+    font-weight: bold;
+}
+
+.nav-elements a:hover {
+    border: 3px solid ;
+    border-color: aliceblue;
+    transition: .3s ease;
+}
+
+
+
+/*desktop*/
+  @media (min-width: 768px) {
+
+    
+    
+    header {
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-top: 30px;
+        background-color: transparent;
+    }
+    .navigation-bar {
+        margin: 30px;
+    }
+
+    .logo {
+        margin: 30px;
+    }
+
+    .nav-elements a {
+        font-weight: 100;
+    }
+    .nav-elements a:hover {
+    border: 3px solid ;
+    border-color: aliceblue;
+    transition: .3s ease;
+}
+}
+
+
+/*content into*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-intro {
+    background-image: url("bs.jpg");
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    height: 50vh;
+}
+
+.content-intro h1 {
+    color: aliceblue;
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.content-intro p {
+    color:aliceblue;
+    padding: 0vh 7vh;
+    font-size: 18px;
+    font-size: calc(0.6em + 1vh) ;
+}
+
+#inediti-curiosita {
+    padding: 10px 12px;
+    color: aliceblue;
+    text-decoration: none;
+    background-color:#4F7482;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: all 0.6s;
+}
+
+#inediti-curiosita:hover {
+    background-color:rgb(17, 25, 42);
+}
+
+
+/*desktop*/
+  @media (min-width: 768px) {
+    .intro {
+        width: 100%;
+        background-image: url("bs.jpg");
+        background-size: cover;
+        background-position: center;    
+    }
+    .content-intro {
+        align-items: flex-start;
+        justify-content: right;
+        margin: 0px 110px;
+        background: transparent;
+        margin: 30px;
+    }
+    .content-intro p {
+        text-align: left;
+        padding-right: 35%;
+        padding-left: 0px;
+        margin: 20px 0px 28px;
+    }
+    #inediti-curiosita {
+        font-size: 18px;
+    }
+
+    #inediti-curiosita:hover {
+        background-color:rgb(17, 25, 42);
+}
+  }
+
+/*services*/
+
+.services {
+    background-color:rgb(17, 25, 42);
+    padding:60px 0px;
+}
+
+.box-services {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row; 
+}
+
+.services .collabora,
+.services .about-us {
+    height: 150px;
+    width: 335px;
+    padding: 20px 30px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 20px 50px;
+    position: relative;
+    overflow : hidden;
+    text-align: center;
+    
+}
+
+.services .material-symbols-outlined {
+    display: block;
+    color: #4F7482;;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    text-shadow: rgb(195, 206, 230) 0px 3px 7px;
+    
+
+} 
+
+.services .collabora h2,
+.services .about-us h2 {
+    font-size: 30px;
+    color: rgb(26, 41, 72);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.services #partecipa ,
+.services #esplora-about-us {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(26, 41, 72);
+    
+}
+
+
+
+  /*desktop*/
+  @media (min-width: 768px) {
+    #partecipa:hover,
+    #esplora-about-us:hover {
+    text-decoration: underline;
+}
+  }
+
+/* article */
+
+.capitale-cultura {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 60px 0px;
+    margin: 0 auto;
+    background: white;
+ 
+}
+
+.capitale-cultura img {
+    height: auto;
+    width: 50vh
+}
+
+.capitale-cultura .article-text {
+    color: rgb(17, 25, 42);
+    margin: 10px;
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: calc(0.6em + 1vh) ;
+}
+
+.capitale-cultura .article-text h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+  /*desktop*/
+  @media (min-width: 768px) {
+    .capitale-cultura {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .content-intro p {
+        padding-right: 55%;
+    }
+
+    .capitale-cultura .article-text h2 {
+        text-align: left;
+    }
+  }
+
+/*footer*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    width: 100%;
+    background-color: aliceblue;
+    align-items: center;
+    font-size: calc(0.5em + 1vh);
+    box-sizing: content-box;
+}
+
+
+footer .logo img {
+    height: 100px;
+    width: auto;
+    padding-top: 10px;
+}
+.contatti {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(17, 25, 42);
+}
+
+
+.contatti h3 {
+    margin-bottom: 0%; 
+    text-align: center;  
+    
+}
+
+
+.contatti-text .instagram,
+.contatti-text .mail {
+    display: flex;
+    margin: 7px;
+
+}
+
+.contatti-text .instagram img{
+    height: 20px;
+    width: 20px;
+    margin: 7px;
+}
+
+.contatti-text .mail img {
+    height: 20px;
+    width: 30px;
+    margin: 7px;
+}
+
+.contatti-text .mail p,
+.contatti-text .instagram p {
+    align-items: center;
+    margin: 5px;
+    text-align: center;
+    padding-top: 9px;
+}
+
+
+
+
+/*desktop*/
+ @media (min-width: 768px) {
+    footer {
+        height: 25%;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contatti {
+        margin-left: 90px;
+    }
+
+    .contatti h3 {
+        text-align: left;
+    }
+
+}
+
+
